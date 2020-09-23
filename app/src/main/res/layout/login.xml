@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/textousuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faça seu Login"
+         />
+
+    <EditText
+        android:id="@+id/campousuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+
+        />
+
+    <TextView
+        android:id="@+id/textosenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+         />
+
+    <EditText
+        android:id="@+id/camposenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+         />
+
+    <Button
+        android:id="@+id/botaoacessar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        />
+
+    <ProgressBar
+        android:id="@+id/progresso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>
