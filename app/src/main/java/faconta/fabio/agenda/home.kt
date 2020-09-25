@@ -23,16 +23,16 @@ class home : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         familia.setOnClickListener{
-            var intent = Intent(this, familia::class.java)
+            var intent = Intent(this, faculdade::class.java)
             startActivity(intent)
         }
 
-        trabalho.setOnClickListener{
+        trampo.setOnClickListener{
             var intent = Intent(this, trabalho::class.java)
             startActivity(intent)
         }
 
-        pessoaldobar.setOnClickListener{
+        cachaca.setOnClickListener{
             var intent = Intent(this, pessoaldobar::class.java)
             startActivity(intent)
         }

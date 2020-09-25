@@ -4,6 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pessoaldobar">
+    tools:context=".faculdade">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="360dp"
+        android:layout_height="317dp"
+        android:text="VAI PORRA DO CARALHO"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="350dp" />
 </LinearLayout>
