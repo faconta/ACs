@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Agenda</string>
+    <string name="navigation_drawer_open">Aberto</string>
+    <string name="navigation_drawer_close">Fechado</string>
+    <string name="a">A</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="d">d</string>
+    <string name="x">x</string>
+    <string name="Contatos">Contatos</string>
+    <string name="configuraçâo">Configuração</string>
+    <string name="buscar">Buscar</string>
+    <string name="atualizar" >Atualizar</string>
+    <string name="sair" > sair</string>
 </resources>

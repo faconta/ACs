@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true"
+    android:id="@+id/layMenuLateral"
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <include layout="@layout/toolbar"> </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerContatos"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+
+
+
+            />
+
+    </ScrollView>
 
     <ProgressBar
         android:id="@+id/progresso2"
@@ -32,7 +59,16 @@
         android:layout_height="wrap_content"
         android:text="Pessoal do bar" />
 
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/lateral"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/cabecario_menu_lateral"
+        app:menu="@menu/menu_lateral"/>
 
 
-
-</LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

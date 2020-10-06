@@ -10,6 +10,7 @@ class Cadastro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Pesquisa"
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

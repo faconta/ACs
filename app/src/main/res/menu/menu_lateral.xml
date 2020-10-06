@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_ctto"
+            android:icon="@drawable/abc_vector_test"
+            android:title="@string/Contatos"
+            android:checked="true"
+            >
+
+        </item>
+
+        <item android:id="@+id/configuracao"
+            android:icon="@drawable/abc_vector_test"
+            android:title="@string/configuraçâo"
+
+            >
+
+        </item>
+
+        <item android:id="@+id/buscar"
+            android:icon="@drawable/abc_vector_test"
+            android:title="@string/buscar"
+
+            >
+
+        </item>
+
+
+        <item android:id="@+id/atualizar"
+            android:icon="@drawable/abc_vector_test"
+            android:title="@string/atualizar"
+
+            >
+
+        </item>
+
+        <item android:id="@+id/saindo"
+            android:icon="@drawable/abc_vector_test"
+            android:title="@string/sair"
+
+            >
+
+        </item>
+    </group>
+</menu>
