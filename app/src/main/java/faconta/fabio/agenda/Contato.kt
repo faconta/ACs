@@ -1,12 +1,17 @@
 package faconta.fabio.agenda
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.io.Serializable
+@Entity(tableName = "contato")
+
 
 class Contato: Serializable {
 
+    @PrimaryKey
     var id: Long = 0
     var nome = ""
-    var tel = ""
+    var telefone = ""
     var foto = ""
     var email = ""
 

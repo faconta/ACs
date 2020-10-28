@@ -15,6 +15,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
+        Prefs.setString("nome", "Novo nome da String")
+        Prefs.setBoolean("professor", true)
+
+        campousuario.setText(Prefs.getString("lembrarnome"))
+        camposenha.setText(Prefs.getString("lembrarsenha"))
+
+        checkBox.isChecked=Prefs.getBoolean("lembrar")
+
         botaoacessar.setOnClickListener{
             progresso.visibility = View.VISIBLE
             Handler(Looper.getMainLooper()).postDelayed(
@@ -22,6 +30,19 @@ class MainActivity : AppCompatActivity() {
                     progresso.visibility = View.GONE
                     val nomeUsuario = campousuario.text.toString()
                     val camposenha =  camposenha.text.toString()
+
+                    val lembrar = checkBox.isChecked
+                    Prefs.setBoolean("lembrar",lembrar)
+                    if (lembrar){
+                        Prefs.setString("lembrarnome",nomeUsuario)
+                        Prefs.setString("lembrarsenha",camposenha)
+
+                    }else{
+                        Prefs.setString("lembrarnome","")
+                        Prefs.setString("lembrarsenha","")
+
+
+                    }
                     if(nomeUsuario == "aluno" && camposenha == "impacta") {
                         var intent = Intent(this, home::class.java)
 
