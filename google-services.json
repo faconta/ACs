@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "811331660836",
+    "firebase_url": "https://lmsapp-fabio.firebaseio.com",
+    "project_id": "lmsapp-fabio",
+    "storage_bucket": "lmsapp-fabio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811331660836:android:7ba7d06e54c7196d86fcb1",
+        "android_client_info": {
+          "package_name": "faconta.fabio.agenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811331660836-13jqhr7vdkhr688qeaqgnvt0jek47o6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClNGmC0tH0ddcisSQJZTWj-keSpn4MFJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811331660836-13jqhr7vdkhr688qeaqgnvt0jek47o6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811331660836:android:55fef914d2c5d0d286fcb1",
+        "android_client_info": {
+          "package_name": "faconta.fabio.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811331660836-13jqhr7vdkhr688qeaqgnvt0jek47o6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClNGmC0tH0ddcisSQJZTWj-keSpn4MFJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811331660836-13jqhr7vdkhr688qeaqgnvt0jek47o6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
