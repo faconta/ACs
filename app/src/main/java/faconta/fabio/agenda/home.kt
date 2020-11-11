@@ -60,6 +60,12 @@ class   home : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListen
         taskcontatos()
     }
 
+    fun enviaNotificacao(contato: Contato){
+        val intent = Intent(this, ContatoActivity::class.java)
+        intent.putExtra("Contato", contato)
+        NotificationUtil.create(1, intent, "LMSappp", "Voce tem uma nova atividade em ${contato.nome}")
+    }
+
     private var contatos = listOf<Contato>()
     fun taskcontatos(){
         contatos = ObejctService.getContatos(this)
